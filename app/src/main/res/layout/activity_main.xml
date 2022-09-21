@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cardview_dark_background"
+        app:title="Soil Moister"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="130dp"
+        android:textAlignment="center"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="4dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:background="@color/design_default_color_primary_variant">
+        <TextView
+            android:id="@+id/soilMoistText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soil Moister : "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/soilMoister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/soilTempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temprature : "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/soiltemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/soilHumidityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity : "
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+
+        <EditText
+            android:id="@+id/soilHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center|center_horizontal"
+            />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/getDataBtn"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:text="Get Data"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"/>
+
+</RelativeLayout>
